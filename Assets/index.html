@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Empty</title>
+</head>
+<body>
+	<style>
+	body, html {
+		margin: 0;
+		padding: 0;		
+		overflow:hidden;
+		width: 100%;
+		height: 100%;
+		
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+		-khtml-user-select: none;    /* Konqueror */
+		-moz-user-select: none;      /* Firefox */
+		-ms-user-select: none;       /* Internet Explorer/Edge */
+		user-select: none;           /* Non-prefixed version, currently */
+	}
+	body {
+		background: grey;
+	}
+	canvas {
+		outline: none;		
+		display: block;
+		margin: auto;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.screenScale {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 2px;
+	}
+	.moreGames {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 2px;
+	}	
+	.moreGames a {
+		text-weight: bold;
+	}
+	.game {
+		width: 100%;
+		height: 100%;
+	}
+	.scaleTitle {
+		margin: 0;
+		padding: 5px;
+		float: left;
+		cursor: default;
+	}
+	.scaleText {
+		padding: 5px;
+		cursor: pointer;
+		float: left;
+	}
+	.scaleText:hover {
+		background: #FFFFFF;
+	}
+	</style>
+	
+	<div class="game">
+		<canvas id="khanvas" width="800" height="720"></canvas>
+	</div>
+	<div class="screenScale">
+		<p class="scaleTitle"> Screen Scale: </p>
+		<div class="scaleText" id="x1">x1</div>
+		<div class="scaleText" id="x2">x2</div>
+		<div class="scaleText" id="x3">x3</div>
+		<div class="scaleText" id="x4">x4</div>
+		<div class="scaleText" id="x5">x5</div>
+	</div>
+	<div class="moreGames">
+		<a href="https://itch.io/jam/gbjam-5/entries">MORE GBJAM5 Games</a>
+	</div>
+	<script src="kha.js"></script>
+</body>
+</html>
